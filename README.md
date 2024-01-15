@@ -2,7 +2,7 @@
 
 ## Wprowadzenie
 
-Ten skrypt przeprowadza analizę regresji na danych Spotify, wykorzystując bibliotekę scikit-learn. Celem jest przewidywanie cechy 'streams' na podstawie wybranych cech wejściowych.
+Ten skrypt przeprowadza analizę regresji na danych Spotify, wykorzystując bibliotekę scikit-learn. Celem jest przewidywanie cechy 'streams' - ilości odtworzeń na podstawie wybranych cech wejściowych.
 
 ## Spis Treści
 
