@@ -67,4 +67,20 @@ result = predictValueByFeatures(pd.read_csv('data/spotify-2023.csv', encoding='l
 <img width="998" alt="Zrzut ekranu 2024-01-15 085331" src="https://github.com/DanielBrzezickiKippo/predict-model-project/assets/56343240/2f93ad3b-9de2-4a1b-a001-fc8ed2186068">
 <img width="450" alt="Zrzut ekranu 2024-01-15 085404" src="https://github.com/DanielBrzezickiKippo/predict-model-project/assets/56343240/57c9edf1-2b3d-4db5-9b40-cde350b619e9">
 
+#### Decision Tree
+W przypadku pojedynczego drzewa decyzyjnego, obserwuje się tendencję do poprawy dokładności modelu wraz z zwiększaniem głębokości drzewa. Warto jednak zauważyć, że głębokość drzewa równa 5 wydaje się być optymalnym wyborem, gdyż dalsze zwiększanie głębokości nie przynosi już tak znaczącej poprawy.
+Wyniki uzyskane na zbiorze testowym (TRAIN_TEST_SPLIT) różnią się od wyników na zbiorze treningowym, co może sugerować pewne przetrenowanie modelu. Optymalna głębokość drzewa dla tego zbioru wydaje się być mniejsza niż dla pojedynczego drzewa.
+
+#### Random Forest
+Random Forest, będący ensemblem drzew decyzyjnych, wykazuje ogólnie lepszą zdolność do generalizacji niż pojedyncze drzewo. Otrzymane wyniki są bardziej stabilne i mniej podatne na przetrenowanie.
+W przypadku Random Forest również zauważa się tendencję do poprawy dokładności wraz z zwiększaniem głębokości drzewa, ale różnice między kolejnymi głębokościami są mniejsze niż dla pojedynczego drzewa.
+
+#### Porównanie między pojedynczym drzewem a Random Forest:
+Random Forest uzyskuje niższe wartości błędów średnich bezwzględnych (MAE) niż pojedyncze drzewo decyzyjne dla wszystkich głębokości drzewa i dla wszystkich rodzajów podziałów danych (SINGLE, TRAIN_TEST_SPLIT, KFOLD).
+Wyniki na zbiorze KFOLD są najbardziej stabilne, co potwierdza, że Random Forest jest bardziej odporny na różnice między podziałami zbioru danych.
+
+### Wnioski ogólne:
+Random Forest wydaje się być bardziej wszechstronnym modelem do tego zadania, oferując lepszą zdolność do generalizacji niż pojedyncze drzewo.
+Optymalna głębokość drzewa może zależeć od specyfiki danych i zadania. Warto przeprowadzić dalsze eksperymenty, aby zoptymalizować parametry modelu.
+Przy analizie wyników ważne jest również zwrócenie uwagi na ewentualne przetrenowanie modelu, co można zaobserwować na zbiorze testowym w przypadku pojedynczego drzewa decyzyjnego. Regularyzacja modelu lub ograniczenie głębokości drzewa może pomóc w tym przypadku.
 
