@@ -84,3 +84,7 @@ Random Forest wydaje się być bardziej wszechstronnym modelem do tego zadania, 
 Optymalna głębokość drzewa może zależeć od specyfiki danych i zadania. Warto przeprowadzić dalsze eksperymenty, aby zoptymalizować parametry modelu.
 Przy analizie wyników ważne jest również zwrócenie uwagi na ewentualne przetrenowanie modelu, co można zaobserwować na zbiorze testowym w przypadku pojedynczego drzewa decyzyjnego. Regularyzacja modelu lub ograniczenie głębokości drzewa może pomóc w tym przypadku.
 
+## Dane wyjściowe z przetrenowanego datasetu:
+<img width="543" alt="image" src="https://github.com/daniel-brzezicki/predict-model-project/assets/56343240/b63b5e84-bebe-493a-a285-765765d96841">
+
+
